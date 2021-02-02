@@ -21,3 +21,9 @@ Route::get('/show/{id}', 'DrinkController@show') -> name('drinks-show');
 Route::get('/create', 'DrinkController@create') -> name('drinks-create');
 
 Route::post('/store', 'DrinkController@store') -> name('store-drinks');
+
+Route::get('/drink-edit/{id}', 'DrinkController@edit') -> name('drinks-edit');
+
+Route::post('/drink-update/{id}', 'DrinkController@update') -> name('drinks-update');
+
+Route::get('/drink-delete/{id}', 'DrinkController@delete') -> name('drinks-delete');

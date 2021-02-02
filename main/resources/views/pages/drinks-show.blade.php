@@ -6,7 +6,7 @@
 
   <h1>Drinks name: {{$drink -> name}}</h1>
 
-  <h3>Gradation: {{$drink -> model}}%</h3>
+  <h3>Gradation: {{$drink -> gradation}}%</h3>
 
   <h3>Price: {{$drink -> price}}$</h3>
 
