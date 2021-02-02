@@ -1,5 +1,6 @@
 <?php
 
+use App\Drink;
 use Illuminate\Database\Seeder;
 
 class DrinkSeeder extends Seeder
@@ -11,6 +12,6 @@ class DrinkSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(Drink::class, 50) -> create();
     }
 }
